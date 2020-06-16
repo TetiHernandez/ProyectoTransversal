@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Conectores;
+package universidad.controlador;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -13,9 +13,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import Conectores.Conexion;
-import universidad.Materia;
-import universidad.Materia;
+import universidad.controlador.Conexion;
+import universidad.modelo.Materia;
+import universidad.modelo.Materia;
 
 /**
  *

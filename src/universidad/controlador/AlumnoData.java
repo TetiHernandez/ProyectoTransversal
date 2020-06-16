@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Conectores;
+package universidad.controlador;
 
 //import accesoabasededatos.modelo.Alumno;
 import java.sql.Connection;
@@ -15,8 +15,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import universidad.Alumno;
-import universidad.Materia;
+import universidad.modelo.Alumno;
+import universidad.modelo.Materia;
 
 /**
  *

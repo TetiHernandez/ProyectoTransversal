@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Conectores;
+package universidad.controlador;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,7 +18,7 @@ public class Conexion {
     private String usuario="root";
     private String password="";
 
-    private Connection conexion;
+    private Connection con;
     
     public Conexion() throws ClassNotFoundException{
             Class.forName("org.mariadb.jdbc.Driver");
@@ -36,13 +36,13 @@ public class Conexion {
     }
     
     public Connection getConexion() throws SQLException{
-        if(conexion == null){
+        if(con == null){
                     // Setup the connection with the DB
-            conexion = DriverManager
+            con = DriverManager
                 .getConnection(url + "?useLegacyDatetimeCode=false&serverTimezone=UTC"
                         + "&user=" + usuario + "&password=" + password);
         }
-        return conexion;
+        return con;
     }
     
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package universidad;
+package universidad.modelo;
 
 import java.time.LocalDate;
 
@@ -31,6 +31,13 @@ public class Alumno {
     }
     
     public Alumno(){ }
+    
+    @Override
+    public String toString(){
+
+        return id+"-"+nombre;
+
+    }
     
     public int getId() {
         return id;
@@ -65,13 +72,6 @@ public class Alumno {
     }
     
     
-    public String toString(){
-        
-        
-        return id+"-"+nombre;
-    
-        
-    }
     
     
     

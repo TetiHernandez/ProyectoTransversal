@@ -3,14 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Conectores;
+
+package universidad;
 
 import java.time.LocalDate;
 import java.util.Iterator;
 import java.util.List;
-import universidad.Alumno;
-import universidad.Cursada;
-import universidad.Materia;
+import universidad.modelo.Alumno;
+import universidad.modelo.Cursada;
+import universidad.modelo.Materia;
+import universidad.controlador.AlumnoData;
+import universidad.controlador.Conexion;
+import universidad.controlador.CursadaData;
+import universidad.controlador.MateriaData;
 
 /**
  *
