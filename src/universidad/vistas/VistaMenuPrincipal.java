@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package universidad.vistastest;
+package universidad.vistas;
 
 /**
  *
@@ -112,6 +112,11 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         jMenu5.setText("Carga de Notas");
 
         mManipulacionNotas.setText("Manipulacion de Notas");
+        mManipulacionNotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mManipulacionNotasActionPerformed(evt);
+            }
+        });
         jMenu5.add(mManipulacionNotas);
 
         jMenuBar1.add(jMenu5);
@@ -225,6 +230,17 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         escritorio.add(viam);
         escritorio.moveToFront(viam);
     }//GEN-LAST:event_mManejoInscripcionesActionPerformed
+
+    private void mManipulacionNotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mManipulacionNotasActionPerformed
+        // TODO add your handling code here:
+        
+        escritorio.removeAll();
+        escritorio.repaint();
+        VistaManipularNotas vmn = new VistaManipularNotas();
+        vmn.setVisible(true);
+        escritorio.add(vmn);
+        escritorio.moveToFront(vmn);
+    }//GEN-LAST:event_mManipulacionNotasActionPerformed
 
     /**
      * @param args the command line arguments
