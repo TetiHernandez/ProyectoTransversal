@@ -174,7 +174,7 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:        
         escritorio.removeAll();
         escritorio.repaint();
-        VistaAlumnos va = new VistaAlumnos();
+        VistaAlumnoss va = new VistaAlumnoss();
         va.setVisible(true);
         escritorio.add(va);
         escritorio.moveToFront(va);
@@ -204,7 +204,7 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
         escritorio.removeAll();
         escritorio.repaint();
-        VistaMaterias vm = new VistaMaterias();
+        VistaMateriass vm = new VistaMateriass();
         vm.setVisible(true);
         escritorio.add(vm);
         escritorio.moveToFront(vm);
